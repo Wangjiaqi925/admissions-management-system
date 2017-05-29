@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>公司公共资产管理系统</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+
+<STYLE type=text/css>
+TD {
+	FONT-SIZE: 9pt; FONT-family: 宋体
+}
+A:link {
+	CURSOR: hand; COLOR: #000000; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #000000; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #3399ff
+}
+.style1 {	font-size: 14px;
+	font-weight: bold;
+}
+#Layer1 {
+	position:absolute;
+	left:133px;
+	top:155px;
+	width:389px;
+	height:336px;
+	z-index:1;
+}
+.STYLE7 {color: #000000}
+</STYLE>
+<script language="javascript">
+function check()
+{
+	if(document.form1.username.value=="" || document.form1.pwd.value=="" || document.form1.yzm.value=="")
+	{
+		alert("请输入完整");
+		return false;
+	}
+}
+</script>
+<META content="MSHTML 6.00.2800.1522" name=GENERATOR></HEAD>
+<BODY style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-BOTTOM-STYLE: none" bgColor=#366ab5 style="overflow:hidden">
+<TABLE height="100%" cellSpacing=5 cellPadding=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+      <TD vAlign=center align=middle><TABLE cellSpacing=0 cellPadding=0 width=778 align=center border=0>
+        <TBODY>
+          <TR>
+            <TD colSpan=3 height=5><IMG height=5 src="images/admin_1_1.gif" width=778></TD>
+          </TR>
+          <TR>
+            <TD width=11><IMG height=450 src="images/admin_left_1.gif" width=11></TD>
+            <TD vAlign=top width=756 background="images/admin_bg.gif"><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <TBODY>
+                  <TR>
+                    <TD height=35>&nbsp;</TD>
+                  </TR>
+                </TBODY>
+              </TABLE>
+                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                  <TBODY>
+                    <TR>
+                      <TD width=390 height=50><IMG height=50 src="images/admin_2_1.gif" width=390></TD>
+                      <TD>&nbsp;</TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                  <TBODY>
+                    <TR>
+                      <TD height=54 valign="top" background="images/admin_3_4.gif"><table width="70%"  border="0" align="right" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td><div style="FONT-WEIGHT: bold; FONT-SIZE: 23pt; FILTER: Glow(Color=#00347F,Strength=4); WIDTH: 100%; COLOR: #ffffff; font-family: 黑体">公司公共资产管理系统</div></td>
+                          </tr>
+                      </table></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                  <TBODY>
+                    <TR>
+                      <TD><IMG height=46 src="images/admin_4_1.gif" width=440></TD>
+                      <TD vAlign=top width=316 rowSpan=7><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <TBODY>
+                            <TR>
+                              <TD><IMG height=19 src="images/admin_4_2_1.gif" width=314></TD>
+                            </TR>
+                            <TR>
+                              <TD><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                  <TBODY>
+                                       <form name="form1" method="post" action="login.php">
+
+                                    <TR>
+                                      <TD width=32><IMG height=188 src="images/admin_4_2_2_1.gif" width=32></TD>
+                                      <TD width=260 background="images/admin_4_2_2_bg.gif"><table width="239" border="0" align="right" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                          <td width="44"><img src="images/i_open.gif"></td>
+                                          <td width="44" height="30"><span class="STYLE7">用 户:</span></td>
+                                          <td height="30" colspan="2"><input name="username" type="text" id="username" style="width:100px; height:16px; border:solid 1px #000000; color:#666666"></td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="images/icon_myalbum.gif"></td>
+                                          <td height="30"><span class="STYLE7">密 码:</span></td>
+                                          <td height="30" colspan="2"><input name="pwd" type="password" id="pwd" style="width:100px; height:16px; border:solid 1px #000000; color:#666666"></td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="images/dept.gif"></td>
+                                          <td height="30"><span class="STYLE7">权 限:</span></td>
+                                          <td height="30" colspan="2"><select name="cx" id="cx">
+                                              <option value="管理员">管理员</option>
+                                              <option value="用户">用户</option>
+                                            </select>
+                                              <input name="login" type="hidden" id="login" value="1"></td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="images/pwd.gif"></td>
+                                          <td height="30"><span class="STYLE7">验证码:</span></td>
+                                          <td width="61" height="30"><input name="yzm" type="text" id="yzm" style=" height:16px; border:solid 1px #000000; color:#666666; width:50px"></td>
+                                          <td width="90"><img alt="刷新验证码" onClick="this.src='code.php?time='+new Date().getTime();" src="code.php?time='+new Date().getTime();" style="cursor:hand"></td>
+                                        </tr>
+                                        <tr>
+                                          <td height="30" colspan="4"><input type="submit" name="Submit" value="登陆" onClick="return check();">
+                                              <input type="button" name="Submit2" value="注册"  onClick="javascript:location.href='yonghuxinxi_add.php'"></td>
+                                        </tr>
+                                      </table></TD>
+                                      <TD width=22><IMG height=188 src="images/admin_4_2_2_2.gif" width=22></TD>
+                                    </TR>
+                                  </FORM>
+
+                              </TABLE></TD>
+                            </TR>
+                            <TR>
+                              <TD vAlign=bottom width=314 background="" height=104><TABLE cellSpacing=0 cellPadding=0 width="100%" align=right border=0>
+                                  <TBODY>
+                                    <TR>
+                                      <TD style="FONT-SIZE: 16px; COLOR: #ffffff" vAlign=top align=middle height=45><B></B></TD>
+                                    </TR>
+                                    <TR>
+                                      <TD style="FONT-SIZE: 12px; COLOR: #ffffff" vAlign=bottom align=right>&nbsp;</TD>
+                                    </TR>
+                                  </TBODY>
+                              </TABLE></TD>
+                            </TR>
+                          </TABLE></TD>
+                    </TR>
+                    <TR>
+                      <TD><IMG height=40 src="images/admin_5_1.gif" width=440></TD>
+                    </TR>
+                    <TR>
+                      <TD><IMG height=50 src="images/admin_6_1.gif" width=440></TD>
+                    </TR>
+                    <TR>
+                      <TD><IMG height=50 src="images/admin_7_1.gif" width=440></TD>
+                    </TR>
+                    <TR>
+                      <TD><IMG height=51 src="images/admin_8_1.gif" width=440></TD>
+                    </TR>
+                    <TR>
+                      <TD><IMG height=39 src="images/admin_9_1.gif" width=440></TD>
+                    </TR>
+                    <TR>
+                      <TD><IMG height=35 src="images/admin_10_1.gif" width=440></TD>
+                    </TR>
+                </TABLE></TD>
+            <TD width=11><IMG height=450 src="images/admin_right_1.gif" width=11></TD>
+          </TR>
+          <TR>
+            <TD colSpan=3 height=13><IMG height=13 src="images/admin_1_2.gif" width=778></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+  </TR></TBODY></TABLE>
+
+</body>
+
