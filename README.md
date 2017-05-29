@@ -3,8 +3,10 @@
 
 下面是登录界面的展示。
 ![](https://github.com/Wangjiaqi925/admissions-management-system/blob/master/picture/login.png)
+
 主界面展示。
 ![](https://github.com/Wangjiaqi925/admissions-management-system/blob/master/picture/main1.png)
+
 部分功能界面的截图展示。
 ![](https://github.com/Wangjiaqi925/admissions-management-system/blob/master/picture/main2.png)
 ![](https://github.com/Wangjiaqi925/admissions-management-system/blob/master/picture/main3.png)
